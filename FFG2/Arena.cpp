@@ -19,6 +19,7 @@ void Arena::battleStart(Entity &player)
 		battleChoice(choice, player, enemy);
 	} while (enemy.getHP() >= 0);
 	
+	battleEnd(player, enemy);
 }
 
 void Arena::battleText(Entity player, Entity &enemy)
@@ -63,11 +64,13 @@ void Arena::fight(Entity player, Entity &enemy)
 	cout << "Enemy takes " << damage << " damage!\n\n";
 	
 	enemy.setHP(enemy.getHP() - damage);
-	cout << enemy.getHP() <<"\n";
+	//cout << enemy.getHP() <<"\n";
 }
 
-void Arena::playerWin()
+void Arena::battleEnd(Entity &player, Entity &enemy)
 {
-	cout << "Battle Won!";
+	if (enemy.getHP() <= 0) {
+		cout << "Battle Won!";
+	}
 
 }

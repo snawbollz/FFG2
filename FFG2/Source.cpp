@@ -17,6 +17,6 @@ int main() {
 	Entity player(pName, 100, 2, 25, 1);
 	
 	arena.battleStart(player);
-	arena
+	
 	return 0;
 }

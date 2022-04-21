@@ -10,6 +10,6 @@ public:
 
 	void fight(Entity player, Entity &enemy);
 
-	void playerWin();
+	void battleEnd(Entity &player, Entity& enemy);
 };
 #endif // !ARENA_H
