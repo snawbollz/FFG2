@@ -148,10 +148,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arena.h" />
+    <ClInclude Include="Armor.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Items.h" />
     <ClInclude Include="Misc.h" />
+    <ClInclude Include="Potions.h" />
     <ClInclude Include="Shop.h" />
+    <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
