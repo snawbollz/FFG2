@@ -1,5 +1,6 @@
 #include "Arena.h"
 #include "Entity.h"
+#include "Shop.h"
 using namespace std;
 
 void Arena::battleStart(Entity &player)
@@ -17,7 +18,7 @@ void Arena::battleStart(Entity &player)
 		cin >> choice;
 
 		battleChoice(choice, player, enemy);
-	} while (enemy.getHP() >= 0);
+	} while (enemy.getHP() >= 0 && player.getHP() >= 0);
 	
 	battleEnd(player, enemy);
 }
@@ -70,7 +71,11 @@ void Arena::fight(Entity player, Entity &enemy)
 void Arena::battleEnd(Entity &player, Entity &enemy)
 {
 	if (enemy.getHP() <= 0) {
-		cout << "Battle Won!";
+		cout << "Battle Won!\n";
+
+	}
+	else if(player.getHP() <= 0){
+		cout << "Battle Lost...\n";
 	}
 
 }
