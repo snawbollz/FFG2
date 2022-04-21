@@ -3,5 +3,5 @@
 #define ARMOR_H
 class Armor {
 
-}
-#endif // !ARMOR_H
+};
+#endif // !ARMOR_H;
