@@ -41,17 +41,17 @@ void Potions::setName(std::string n)
 	name = n;
 }
 
-int Potions::setHealthBoost(int h)
+void Potions::setHealthBoost(int h)
 {
 	 healthBoost= h;
 }
 
-int Potions::setAttackBoost(int a)
+void Potions::setAttackBoost(int a)
 {
 	attackBoost = a;
 }
 
-int Potions::setDefenseBoost(int d)
+void Potions::setDefenseBoost(int d)
 {
 	defenseBoost = d;
 }

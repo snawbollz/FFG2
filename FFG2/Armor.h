@@ -1,17 +1,18 @@
 #pragma once
 #ifndef ARMOR_H
 #define ARMOR_H
+#include <string>
 class Armor {
 private:
-	string name;
+	std::string name;
 	int defenseStat;
 public:
 	Armor();
-	Armor(string n, int a);
-	string getName();
-	int getAttack();
-	void setAttack(int a);
-	void setName(string n);
+	Armor(std::string n, int a);
+	std::string getName();
+	int getDefense();
+	void setDefense(int a);
+	void setName(std::string n);
 
 };
 #endif // !ARMOR_H;

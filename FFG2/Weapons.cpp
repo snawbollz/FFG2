@@ -12,7 +12,7 @@ Weapons::Weapons(string n, int a) {
 	attackStat = a;
 }
 
-string Weapons::getName() {
+std::string Weapons::getName() {
 	return name;
 }
 

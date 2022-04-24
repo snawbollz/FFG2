@@ -10,6 +10,7 @@ private:
 	int potionsPurchased;
 public:
 	void Enter();
-	vector<Shop> ItemGeneration();
+	void ItemGeneration();
+	
 };
 #endif

@@ -16,11 +16,11 @@ string Armor::getName() {
 	return name;
 }
 
-int Armor::getAttack() {
+int Armor::getDefense() {
 	return defenseStat;
 }
 
-void Armor::setAttack(int a) {
+void Armor::setDefense(int a) {
 	defenseStat = a;
 }
 
