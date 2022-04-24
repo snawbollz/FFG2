@@ -1,6 +1,7 @@
 #pragma once
 #ifndef WEAPONS_H
 #define WEAPONS_H
+#include "Items.h"
 #include <string>
 using namespace std;
 

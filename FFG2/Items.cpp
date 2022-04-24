@@ -1,8 +1,8 @@
 #include "Items.h"
 #include <vector>
 #include <string>
-
-Weapons Items::weaponCreate() {
+/*
+Weapons Items::weaponCreate(int x) {
 	Weapons myWeapons[10] = {};
 
     myWeapons[0].setName("Long sword");
@@ -35,10 +35,10 @@ Weapons Items::weaponCreate() {
     myWeapons[9].setName("ALT F4");
     myWeapons[9].setAttack(200);
 
-    return *myWeapons;
+    return myWeapons[x];
 }
 
-Armor Items::armorCreate()
+Armor Items::armorCreate(int x)
 {
 	Armor myArmors[10] = {};
 
@@ -72,11 +72,62 @@ Armor Items::armorCreate()
     myArmors[9].setName("Giga mail");
     myArmors[9].setDefense(100);
 
-    return *myArmors;
+    return myArmors[x];
 }
-Potions Items::potionsCreate()
+Potions Items::potionsCreate(int x)
 {
 	Potions myPotions[10] = {};
 
-    return *myPotions;
+    myPotions[0].setName("Health potion");
+    myPotions[0].setHealthBoost(50);
+    myPotions[0].setAttackBoost(0);
+    myPotions[0].setDefenseBoost(0);
+
+    myPotions[1].setName("Rage potion");
+    myPotions[1].setHealthBoost(0);
+    myPotions[1].setAttackBoost(30);
+    myPotions[1].setDefenseBoost(0);
+
+    myPotions[2].setName("Fortifying potion");
+    myPotions[2].setHealthBoost(0);
+    myPotions[2].setAttackBoost(0);
+    myPotions[2].setDefenseBoost(15);
+
+    myPotions[3].setName("Iron skin potion");
+    myPotions[3].setHealthBoost(0);
+    myPotions[3].setAttackBoost(20);
+    myPotions[3].setDefenseBoost(30);
+
+    myPotions[4].setName("Skin potion");
+    myPotions[4].setHealthBoost(75);
+    myPotions[4].setAttackBoost(0);
+    myPotions[4].setDefenseBoost(30);
+
+    myPotions[5].setName("Big potion");
+    myPotions[5].setHealthBoost(50);
+    myPotions[5].setAttackBoost(30);
+    myPotions[5].setDefenseBoost(15);
+
+    myPotions[6].setName("Super strength potion");
+    myPotions[6].setHealthBoost(0);
+    myPotions[6].setAttackBoost(100);
+    myPotions[6].setDefenseBoost(0);
+
+    myPotions[7].setName("Broze skin potion");
+    myPotions[7].setHealthBoost(0);
+    myPotions[7].setAttackBoost(0);
+    myPotions[7].setDefenseBoost(70);
+
+    myPotions[8].setName("Healthy potion");
+    myPotions[8].setHealthBoost(150);
+    myPotions[8].setAttackBoost(0);
+    myPotions[8].setDefenseBoost(0);
+
+    myPotions[9].setName("Giga potion");
+    myPotions[9].setHealthBoost(100);
+    myPotions[9].setAttackBoost(60);
+    myPotions[9].setDefenseBoost(30);
+
+    return myPotions[x];
 }
+*/

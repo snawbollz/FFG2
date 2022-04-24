@@ -1,6 +1,7 @@
 #pragma once
 #ifndef ARMOR_H
 #define ARMOR_H
+#include "Items.h"
 #include <string>
 class Armor {
 private:

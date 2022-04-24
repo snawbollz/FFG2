@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Items.h"
 #ifndef POTIONS_H
 #define POTIONS_H
 class Potions {
