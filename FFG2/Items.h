@@ -6,6 +6,9 @@
 #include "Potions.h"
 
 class Items {
-
+public:
+	void weaponCreate();
+	void armorCreate();
+	void potionsCreate();
 };
 #endif

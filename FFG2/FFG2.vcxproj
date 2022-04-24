@@ -141,10 +141,11 @@
   <ItemGroup>
     <ClCompile Include="Arena.cpp" />
     <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Items.cpp" />
     <ClCompile Include="Misc.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Weapons.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arena.h" />

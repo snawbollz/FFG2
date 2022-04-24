@@ -10,7 +10,8 @@ void Shop::Enter()
 
 }
 
-void Shop::ItemGeneration()
+vector<Shop> Shop::ItemGeneration()
 {
-	
+
+	vector<Shop>;
 }
