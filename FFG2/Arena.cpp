@@ -18,8 +18,13 @@ void Arena::battleStart(Entity &player)
 		cin >> choice;
 
 		battleChoice(choice, player, enemy);
-		if (choice < 4) {
-		enemyAttack(player, enemy);
+		if (choice != 4) {
+			if (choice == 2) {
+				enemyBlockedAttack(player, enemy);
+			}else{
+				enemyAttack(player, enemy);
+			}
+		
 		}
 	} while (enemy.getHP() >= 0 && player.getHP() >= 0);
 	
@@ -61,11 +66,23 @@ void Arena::battleChoice(int c, Entity player, Entity &enemy)
 void Arena::enemyAttack(Entity& player, Entity& enemy)
 {
 	int damage;
-	damage = (rand() % 25 + 1) - player.getDefense();
+	damage = (rand() % 50 + 1) - player.getDefense();
 	if (damage <= 0) {
 		damage = 0;
 	}
 	cout <<  player.getName() << " takes " << damage << " damage!\n\n";
+
+	player.setHP(player.getHP() - damage);
+}
+
+void Arena::enemyBlockedAttack(Entity& player, Entity& enemy)
+{
+	int damage;
+	damage = ((rand() % 50 + 1) - player.getDefense())/2;
+	if (damage <= 0) {
+		damage = 0;
+	}
+	cout << player.getName() << " takes " << damage << " damage!\n\n";
 
 	player.setHP(player.getHP() - damage);
 }
@@ -81,11 +98,6 @@ void Arena::fight(Entity player, Entity &enemy)
 	
 	enemy.setHP(enemy.getHP() - damage);
 	//cout << enemy.getHP() <<"\n";
-}
-
-void Arena::block(Entity player, Entity& enemy)
-{
-
 }
 
 void Arena::battleEnd(Entity &player, Entity &enemy)

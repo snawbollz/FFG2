@@ -3,5 +3,6 @@
 class Shop {
 public:
 	void Enter();
+	void ItemGeneration();
 };
 #endif
