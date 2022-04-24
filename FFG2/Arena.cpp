@@ -8,8 +8,8 @@ void Arena::battleStart(Entity &player)
 	std::cout << "The Battle Begins!\n";
 	
 	int levelBal = player.getLevel();
-	int ranDefense = rand() % 50;
-	Entity enemy("Enemy", 100, 1, ranDefense, levelBal);
+	int ranDefense = rand() % 20+(levelBal*5);
+	Entity enemy("Enemy", 100, ranDefense, levelBal);
 	
 	do  {
 		battleText(player, enemy);
@@ -18,6 +18,9 @@ void Arena::battleStart(Entity &player)
 		cin >> choice;
 
 		battleChoice(choice, player, enemy);
+		if (choice < 4) {
+		enemyAttack(player, enemy);
+		}
 	} while (enemy.getHP() >= 0 && player.getHP() >= 0);
 	
 	battleEnd(player, enemy);
@@ -47,12 +50,24 @@ void Arena::battleChoice(int c, Entity player, Entity &enemy)
 		//Item Function
 		break;
 	case 4:
-		cout << "Name: " << player.getName() << endl;
-		cout << "HP: " << player.getHP() << endl;
-		cout << "Speed: " << player.getSpeed() << endl;
-		cout << "Level: " << player.getLevel() << endl;
+		cout << "Name:  " << player.getName() << "\tName:   " << enemy.getName() << endl;
+		cout << "HP:    " << player.getHP() << "\tHP:     " << enemy.getHP() << endl;
+		cout << "Defense: " << player.getDefense() << "\tDefense:  " << enemy.getDefense() << endl;
+		cout << "Level: " << player.getLevel() << "\tLevel:  " << enemy.getLevel() << endl << "\n";
 		break;
 	}
+}
+
+void Arena::enemyAttack(Entity& player, Entity& enemy)
+{
+	int damage;
+	damage = (rand() % 25 + 1) - player.getDefense();
+	if (damage <= 0) {
+		damage = 0;
+	}
+	cout <<  player.getName() << " takes " << damage << " damage!\n\n";
+
+	player.setHP(player.getHP() - damage);
 }
 
 void Arena::fight(Entity player, Entity &enemy)
@@ -66,6 +81,11 @@ void Arena::fight(Entity player, Entity &enemy)
 	
 	enemy.setHP(enemy.getHP() - damage);
 	//cout << enemy.getHP() <<"\n";
+}
+
+void Arena::block(Entity player, Entity& enemy)
+{
+
 }
 
 void Arena::battleEnd(Entity &player, Entity &enemy)

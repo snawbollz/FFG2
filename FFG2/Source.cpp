@@ -17,7 +17,7 @@ int main() {
 
 	pName = miscFunction.addName();
 
-	Entity player(pName, 100, 2, 25, 1);
+	Entity player(pName, 100, 25, 1);
 
 	do {
 		arena.battleStart(player);

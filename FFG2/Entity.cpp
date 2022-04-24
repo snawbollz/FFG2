@@ -2,14 +2,12 @@
 Entity::Entity() {
 	name = "default";
 	HP = 100;
-	Speed = 1;
 	level = 1;
 }
 
-Entity::Entity(std::string n, int h, int s, int d, int l) {
+Entity::Entity(std::string n, int h, int d, int l) {
 	name = n;
 	HP = h;
-	Speed = s;
 	defense = d;
 	level = l;
 }
@@ -25,10 +23,6 @@ std::string Entity::getName() {
 
 int Entity::getHP() {
 	return HP;
-}
-
-int Entity::getSpeed() {
-	return Speed;
 }
 
 int Entity::getDefense()
