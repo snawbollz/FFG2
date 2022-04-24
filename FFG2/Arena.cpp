@@ -27,7 +27,7 @@ void Arena::battleStart(Entity &player)
 			}
 		
 		}
-	} while (enemy.getHP() >= 0 && player.getHP() >= 0);
+	} while (enemy.getHP() > 0 && player.getHP() > 0);
 	
 	battleEnd(player, enemy);
 }

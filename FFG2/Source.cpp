@@ -1,5 +1,5 @@
 //Brian Macias
-//This is my own work.
+//Collaboration with Ethan Burley.
 
 #include "Entity.h"
 #include "Arena.h"
