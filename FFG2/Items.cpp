@@ -3,9 +3,11 @@
 #include <string>
 
 void Items::weaponCreate() {
-	string myWeapons[10] = {};
+	Weapons myWeapons[10] = {};
 
-	myWeapons[1] = "name";
+	myWeapons[1].setName("name");
+	myWeapons[1].setAttack(5);
+
 
 	
 
@@ -14,10 +16,10 @@ void Items::weaponCreate() {
 
 void Items::armorCreate()
 {
-	string myArmors[10] = {};
+	Armor myArmors[10] = {};
 }
 
 void Items::potionsCreate()
 {
-	string myPotions[10] = {};
+	Potions myPotions[10] = {};
 }
