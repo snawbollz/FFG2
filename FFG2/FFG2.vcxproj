@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arena.cpp" />
+    <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Items.cpp" />
     <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Potions.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Weapons.cpp" />

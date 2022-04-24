@@ -13,5 +13,5 @@ void Shop::Enter()
 vector<Shop> Shop::ItemGeneration()
 {
 
-	vector<Shop>;
+	 
 }
