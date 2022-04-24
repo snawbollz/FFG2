@@ -10,7 +10,7 @@ private:
 	int potionsPurchased;
 public:
 	void Enter();
-	void ItemGeneration();
+	void ItemGeneration(Items &item);
 	
 };
 #endif

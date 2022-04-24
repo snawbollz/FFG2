@@ -9,9 +9,10 @@
 
 class Items {
 public:
-	Weapons weaponCreate();
-	Armor armorCreate();
-	Potions potionsCreate();
+
+	Weapons weaponCreate(int x);
+	Armor armorCreate(int x);
+	Potions potionsCreate(int x);
 
 };
 #endif
