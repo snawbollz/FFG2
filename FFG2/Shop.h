@@ -9,18 +9,28 @@
 
 
 class Shop {
-private:
+public:
+	vector<int> inv;
+
+	int weaponsPurchased = 0;
+	int armorsPurchased = 0;
+	int potionsPurchased = 0;
+
 	Weapons* myWeapons[10];
 	Armor* myArmors[10];
 	Potions* myPotions[10];
 
-	int weaponsPurchased;
-	int armorsPurchased;
-	int potionsPurchased;
-public:
 	Shop();
 	void Enter();
-	void ItemGeneration(Items &item);
+	void ItemGeneration();
+	void playerItems();
 	
+	void playerInv();
+
+	int playerAttackBoost();
+	int playerDefenseBoost();
+	int potionHPBoost();
+	int potionAttackBoost();
+	int potionDefenseBoost();
 };
 #endif

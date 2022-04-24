@@ -12,6 +12,11 @@ Entity::Entity(std::string n, int h, int d, int l) {
 	level = l;
 }
 
+void Entity::setLevel(int l)
+{
+	level = l;
+}
+
 void Entity::setHP(int h)
 {
 	HP = h;

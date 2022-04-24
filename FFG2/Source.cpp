@@ -22,6 +22,8 @@ int main() {
 	do {
 		arena.battleStart(player);
 		shop.Enter();
+		player.setLevel(player.getLevel() + 1);
+		player.setHP(100 + (25* player.getLevel()) + shop.potionHPBoost());
 	} while (player.getHP() >= 0);
 	
 	return 0;

@@ -10,111 +10,37 @@ Shop::Shop() {
  
     myWeapons[0] = new Weapons("Long sword", 20);
     myWeapons[1] = new Weapons("Gold spear",30);
-   
-    myWeapons[2].setName("Fire staff");
-    myWeapons[2].setAttack(40);
+    myWeapons[2] = new Weapons("Fire staff", 40);
+    myWeapons[3] = new Weapons("Sasha", 70);
+    myWeapons[4] = new Weapons("Eyelander", 80);
+    myWeapons[5] = new Weapons("Rocket flail", 90);
+    myWeapons[6] = new Weapons("gun", 120);
+    myWeapons[7] = new Weapons("Almighty Sagely Higness Great Pardon Emancipation Holy Terrific Special Godly Fork", 130);
+    myWeapons[8] = new Weapons("Big iron", 140);
+    myWeapons[9] = new Weapons("ALT F4", 200);
 
-    myWeapons[3].setName("Sasha");
-    myWeapons[3].setAttack(70);
-
-    myWeapons[4].setName("Eyelander");
-    myWeapons[4].setAttack(80);
-
-    myWeapons[5].setName("Rocket flail");
-    myWeapons[5].setAttack(90);
-
-    myWeapons[6].setName("gun");
-    myWeapons[6].setAttack(120);
-
-    myWeapons[7].setName("Almighty Sagely Higness Great Pardon Emancipation Holy Terrific Special Godly Fork");
-    myWeapons[7].setAttack(130);
-
-    myWeapons[8].setName("Big iron");
-    myWeapons[8].setAttack(140);
-
-    myWeapons[9].setName("ALT F4");
-    myWeapons[9].setAttack(200);
-
-    myArmors[0].setName("Leather armor");
-    myArmors[0].setDefense(10);
-
-    myArmors[1].setName("Chain mail");
-    myArmors[1].setDefense(15);
-
-    myArmors[2].setName("Plate mail");
-    myArmors[2].setDefense(20);
-
-    myArmors[3].setName("Gold plate mail");
-    myArmors[3].setDefense(40);
-
-    myArmors[4].setName("Flanel");
-    myArmors[4].setDefense(45);
-
-    myArmors[5].setName("Witch's robe");
-    myArmors[5].setDefense(50);
-
-    myArmors[6].setName("Soilders getup");
-    myArmors[6].setDefense(70);
-
-    myArmors[7].setName("Loin cloth");
-    myArmors[7].setDefense(75);
-
-    myArmors[8].setName("Mega Ultra Supreme Amazing Wonderus Superb Unholy Fantistic T shirt");
-    myArmors[8].setDefense(80);
-
-    myArmors[9].setName("Giga mail");
-    myArmors[9].setDefense(100);
+    myArmors[0] = new Armor("Leather armor", 10);
+    myArmors[1] = new Armor("Chain mail", 15);
+    myArmors[2] = new Armor("Plate mail", 20);
+    myArmors[3] = new Armor("Gold plate mail", 40);
+    myArmors[4] = new Armor("Flanel", 45);
+    myArmors[5] = new Armor("Witch's robe", 50);
+    myArmors[6] = new Armor("Soilders getup", 70);
+    myArmors[7] = new Armor("Loin cloth", 75);
+    myArmors[8] = new Armor("Mega Ultra Supreme Amazing Wonderus Superb Unholy Fantistic T shirt", 80);
+    myArmors[9] = new Armor("Giga mail", 100);
 
 
-    myPotions[0].setName("Health potion");
-    myPotions[0].setHealthBoost(50);
-    myPotions[0].setAttackBoost(0);
-    myPotions[0].setDefenseBoost(0);
-
-    myPotions[1].setName("Rage potion");
-    myPotions[1].setHealthBoost(0);
-    myPotions[1].setAttackBoost(30);
-    myPotions[1].setDefenseBoost(0);
-
-    myPotions[2].setName("Fortifying potion");
-    myPotions[2].setHealthBoost(0);
-    myPotions[2].setAttackBoost(0);
-    myPotions[2].setDefenseBoost(15);
-
-    myPotions[3].setName("Iron skin potion");
-    myPotions[3].setHealthBoost(0);
-    myPotions[3].setAttackBoost(20);
-    myPotions[3].setDefenseBoost(30);
-
-    myPotions[4].setName("Skin potion");
-    myPotions[4].setHealthBoost(75);
-    myPotions[4].setAttackBoost(0);
-    myPotions[4].setDefenseBoost(30);
-
-    myPotions[5].setName("Big potion");
-    myPotions[5].setHealthBoost(50);
-    myPotions[5].setAttackBoost(30);
-    myPotions[5].setDefenseBoost(15);
-
-    myPotions[6].setName("Super strength potion");
-    myPotions[6].setHealthBoost(0);
-    myPotions[6].setAttackBoost(100);
-    myPotions[6].setDefenseBoost(0);
-
-    myPotions[7].setName("Broze skin potion");
-    myPotions[7].setHealthBoost(0);
-    myPotions[7].setAttackBoost(0);
-    myPotions[7].setDefenseBoost(70);
-
-    myPotions[8].setName("Healthy potion");
-    myPotions[8].setHealthBoost(150);
-    myPotions[8].setAttackBoost(0);
-    myPotions[8].setDefenseBoost(0);
-
-    myPotions[9].setName("Giga potion");
-    myPotions[9].setHealthBoost(100);
-    myPotions[9].setAttackBoost(60);
-    myPotions[9].setDefenseBoost(30);
+    myPotions[0] = new Potions("Health potion", 50, 0, 0);
+    myPotions[1] = new Potions("Rage potion", 0, 30, 0);
+    myPotions[2] = new Potions("Fortifying potion", 0, 0, 15);
+    myPotions[3] = new Potions("Iron skin potion", 0, 20, 30);
+    myPotions[4] = new Potions("Skin potion", 75, 0, 30);
+    myPotions[5] = new Potions("Big potion", 50, 30, 10);
+    myPotions[6] = new Potions("Super strength potion", 0, 100, 0);
+    myPotions[7] = new Potions("Broze skin potion",0,0,70);
+    myPotions[8] = new Potions("Healthy potion", 150, 0, 0);
+    myPotions[9] = new Potions("Giga potion",100,60,30);
 
 }
 
@@ -123,24 +49,104 @@ void Shop::Enter()
 	cout << "Welcome to the Shop!\n";
 	cout << "Please make your Choice!\n\n";
 
-	Items item;
-
-	ItemGeneration(item);
+	
+	ItemGeneration();
 }
 
-void Shop::ItemGeneration(Items &item)
+void Shop::ItemGeneration()
 {
-	item.weaponCreate(weaponsPurchased);
-	item.armorCreate(armorsPurchased);
-	item.potionsCreate(potionsPurchased);
+    
+	cout << "1) " << myWeapons[weaponsPurchased]->getName() << "\n";
+	cout << "\t +" << myWeapons[weaponsPurchased]->getAttack() << " damage to attacks.\n";
 
-	//cout << "1) " << weapon.getName() << "\n";
-	//cout << "\t " << weapon.getAttack() << " damage to attacks.";
+	cout << "2) " << myArmors[armorsPurchased]->getName() << "\n";
+	cout << "\t +" << myArmors[armorsPurchased]->getDefense() << " defense from all damage.\n";
 
-	//cout << "2) " << armor.getName() << "\n";
-	//cout << "\t " << armor.getDefense() << " defense from all damage.";
+	cout << "3) " << myPotions[potionsPurchased]->getName() << "\n";
+	cout << "\t +" << myPotions[potionsPurchased]->getHealthBoost() << " Health +" 
+        << myPotions[potionsPurchased]->getAttackBoost() << " Damage +"
+        << myPotions[potionsPurchased]->getDefenseBoost() << " Defense\n\n";
 
-	//cout << "3) " << potion.getName() << "\n";
-	//cout << "\t " << potion.getHealthBoost() << " Health " << potion.getAttackBoost() << " Damage " << potion.getDefenseBoost() << " Defense";
+    int shopC;
+    cin >> shopC;
+
+    switch (shopC) {
+    case 1:
+        if (weaponsPurchased != 10) {
+            weaponsPurchased++;
+        }
+        break;
+    case 2:
+        if (armorsPurchased != 10) {
+            armorsPurchased++;
+        }
+        break;
+    case 3:
+        if (potionsPurchased != 10) {
+            potionsPurchased++;
+        }
+        break;
+    }
+
+    playerInv();
+}
+
+void Shop::playerItems()
+{
+    cout << "Weapon: " << myWeapons[weaponsPurchased]->getName() << "\n";
+    cout << "\t +" << myWeapons[weaponsPurchased]->getAttack() << " damage to attacks.\n";
+
+    cout << "Armor: " << myArmors[armorsPurchased]->getName() << "\n";
+    cout << "\t +" << myArmors[armorsPurchased]->getDefense() << " defense from all damage.\n";
+
+    cout << "Potion: " << myPotions[potionsPurchased]->getName() << "\n";
+    cout << "\t +" << myPotions[potionsPurchased]->getHealthBoost() << " Health +"
+        << myPotions[potionsPurchased]->getAttackBoost() << " Damage +"
+        << myPotions[potionsPurchased]->getDefenseBoost() << " Defense\n\n";
 
 }
+
+void Shop::playerInv()
+{
+    inv.assign(0, weaponsPurchased);
+    inv.assign(1, armorsPurchased);
+    inv.assign(2, potionsPurchased);
+    cout << "Current Upgrades: \n";
+    cout << "Weapons: " << weaponsPurchased << "\t Armor: " << armorsPurchased << "\t Potions:" << potionsPurchased << "\n";
+}
+
+int Shop::playerAttackBoost()
+{
+    int attack = myWeapons[weaponsPurchased]->getAttack();
+
+    return attack;
+}
+
+int Shop::playerDefenseBoost()
+{
+    int defense = myArmors[armorsPurchased]->getDefense();
+
+    return defense;
+}
+
+int Shop::potionHPBoost()
+{
+    int HP = myPotions[potionsPurchased]->getHealthBoost();
+
+    return HP;
+}
+
+int Shop::potionAttackBoost()
+{
+    int attack = myPotions[potionsPurchased]->getAttackBoost();
+
+    return attack;
+}
+
+int Shop::potionDefenseBoost()
+{
+    int defense = myPotions[potionsPurchased]->getDefenseBoost();
+
+    return defense;
+}
+

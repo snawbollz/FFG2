@@ -13,7 +13,7 @@ public:
 	Entity();
 	Entity(std::string n, int h, int d, int l);
 	
-	//void setName(std::string n);
+	void setLevel(int l);
 	void setHP(int h);
 	
 	std::string getName();
